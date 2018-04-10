@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicappv3.MainActivity">
+
+    <TextView
+        android:id="@+id/homepage"
+        style="@style/TitleStyle"
+        android:background="@color/tan_background"
+        android:text="@string/homepage"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height"
+            android:src="@drawable/ordinary_days"/>
+
+        <TextView
+            android:id="@+id/ordinary"
+            style="@style/AlbumStyle"
+            android:background="@color/category_album"
+            android:text="@string/album_ordinary_days"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height"
+            android:src="@drawable/how_lovely"/>
+
+        <TextView
+            android:id="@+id/howlovely"
+            style="@style/AlbumStyle"
+            android:background="@color/category_album"
+            android:text="@string/album_how_lovely" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Music App v3</string>
+
+    <!-- Title for homepage [CHAR LIMIT=20]-->
+    <string name="homepage">Favorite Albums</string>
+
+    <!-- Category [CHAR LIMIT=20] -->
+    <string name="album_ordinary_days">Ordinary Days</string>
+
+    <string name="album_how_lovely">How Lovely is Thy Dwelling Place</string>
+</resources>
