@@ -38,6 +38,5 @@ public class SongAdapter extends ArrayAdapter {
         albumTextView.setText(my_word.getAlbumName());
 
         return listItemView;
-        //return super.getView(position, convertView, parent);
     }
 }

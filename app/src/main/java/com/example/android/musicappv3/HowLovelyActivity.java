@@ -1,7 +1,10 @@
 package com.example.android.musicappv3;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -46,5 +49,13 @@ public class HowLovelyActivity extends AppCompatActivity {
         // Make the {@link ListView} use the {@link SongAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Song} in the list.
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView adapterView, View view, int i, long l) {
+                Intent openMainActivity = new Intent(HowLovelyActivity.this, MainActivity.class);
+                startActivity(openMainActivity);
+            }
+        });
     }
 }
